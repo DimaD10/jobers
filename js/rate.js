@@ -9,8 +9,6 @@ window.addEventListener('load', () => {
             rate.querySelector(".review-rate__stars-rate").style.width = `${
               (width / 5) * mark - 2 - 0.6 * mark
             }%`;
-
-            console.log(width, mark);
         });
     }
 })

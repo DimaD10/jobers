@@ -33,7 +33,14 @@
                 </p>
 
                 <input type="text" class="post__input" required placeholder="Tell us the job title you’re hiring for">
-                <input type="text" class="post__input" required placeholder="Tell us the city you’re hiring in">
+                <div class="post__input-wrapper">
+                  <input type="text" class="post__input" id="place-input" required placeholder="Tell us the city you’re hiring in">
+
+                  <div class="input-rec">
+                    <div class="input-rec__el">Item 1</div>
+                    <div class="input-rec__el">Item 2</div>
+                  </div>
+                </div>
 
                 <button class="post__button">
                   Post your job for free
@@ -362,5 +369,6 @@
     </div>
 
     <script src="./js/rate.js"></script>
+    <script src="./js/actions.js"></script>
   </body>
 </html>

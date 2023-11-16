@@ -103,6 +103,10 @@
     font-size: 16px;
     width: 100%;
 
+    &-wrapper {
+      position: relative;
+    }
+
     &::placeholder {
       color: #827575;
     }
@@ -204,6 +208,33 @@
     @media (max-width: 767.98px) {
       display: none;
     }
+  }
+}
+.input-rec {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  border-radius: 8px;
+  color: #636d77;
+  font-size: 16px;
+  line-height: 30px;
+  border: 1px solid #c4cfde;
+  background-color: #fff;
+
+  transition: opacity ease .3s;
+
+  opacity: 0;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -664,10 +695,10 @@
 }
 .trust-decor {
   position: absolute;
-  bottom: 16%;
-  right: 0;
+  bottom: 17%;
+  right: 10px;
 
-  width: 10vw;
+  width: 30vw;
   max-width: 184px;
 
   @media (max-width: 767.98px) {

@@ -286,6 +286,9 @@ body {
   transition: border ease 0.3s, box-shadow ease 0.3s;
   transition: border ease 0.3s, box-shadow ease 0.3s, -webkit-box-shadow ease 0.3s;
 }
+.post__input-wrapper {
+  position: relative;
+}
 .post__input::-webkit-input-placeholder {
   color: #827575;
 }
@@ -397,6 +400,35 @@ body {
   .post .form-decor-bottom {
     display: none;
   }
+}
+
+.input-rec {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  border-radius: 8px;
+  color: #636d77;
+  font-size: 16px;
+  line-height: 30px;
+  border: 1px solid #c4cfde;
+  background-color: #fff;
+  -webkit-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.input-rec.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .questions {
@@ -999,9 +1031,9 @@ body {
 
 .trust-decor {
   position: absolute;
-  bottom: 16%;
-  right: 0;
-  width: 10vw;
+  bottom: 17%;
+  right: 10px;
+  width: 30vw;
   max-width: 184px;
 }
 @media (max-width: 767.98px) {
