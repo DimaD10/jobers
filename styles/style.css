@@ -288,6 +288,7 @@ body {
 }
 .post__input-wrapper {
   position: relative;
+  width: 100%;
 }
 .post__input::-webkit-input-placeholder {
   color: #827575;
