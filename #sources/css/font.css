@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/regular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/regular/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/bold/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/bold/ProximaNova-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
