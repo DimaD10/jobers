@@ -98,7 +98,7 @@ h6 {
 }
 @font-face {
   font-family: "Miller";
-  src: url("../../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
+  src: url("../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -117,7 +117,7 @@ h6 {
 }
 @font-face {
   font-family: "Miller";
-  src: url("../../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
+  src: url("../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -892,7 +892,7 @@ body {
   width: 169px;
   height: 66px;
   pointer-events: none;
-  background: url("../../img/decor/trust-decor-dots1.svg") no-repeat 100%;
+  background: url("../img/decor/trust-decor-dots1.svg") no-repeat 100%;
 }
 @media (max-width: 767.98px) {
   .trust-body__percent::after {
