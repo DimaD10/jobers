@@ -369,7 +369,7 @@ body {
 }
 .post .form-decor {
   width: 44vw;
-  max-width: 490px;
+  max-width: 470px;
   position: absolute;
   top: -70px;
   left: calc(100% - 60px);
