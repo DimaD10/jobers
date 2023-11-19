@@ -741,7 +741,7 @@
   position: absolute;
   top: -100px;
   left: -60px;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   position: none;
 
@@ -753,10 +753,74 @@
     position: static;
     margin: 0 auto;
     margin-bottom: -100px;
-    margin-top: -180px;
+    margin-top: -150px;
   }
   @media (max-width: 480px) {
     margin-top: -150px;
+  }
+  @media (min-width: 767.98px) {
+    display: none;
+  }
+}
+.trust-re {
+  position: absolute;
+  top: 80px;
+  left: -50px;
+  max-width: 186px;
+  width: 100%;
+  position: none;
+
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50%;
+      top: 0px;
+      left: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: #ffca00;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 180px;
+      left: 130px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #979ad3;
+    }
+  }
+}
+.trust-decor-user-top-desktop {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  max-width: 330px;
+  width: 100%;
+  position: none;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    display: none;
   }
 }
 .trust-decor-user-middle {
