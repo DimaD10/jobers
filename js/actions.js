@@ -11,6 +11,7 @@ document.querySelectorAll('.post__input').forEach(el => {
         }
     })
 })
+
 document.querySelectorAll('.post__input').forEach(el => {
     el.addEventListener('blur', e => {
         let recDropdown = el.closest('.post__input-wrapper').querySelector('.input-rec');
@@ -29,11 +30,3 @@ document.querySelectorAll('.post__input').forEach(el => {
         }
     })
 })
-/*
-place.addEventListener('focus', () => {
-    if (place.value != "") {
-        recDropdown.classList.add('active')
-    } else {
-        recDropdown.classList.remove('active')
-    }
-})*/

@@ -222,12 +222,12 @@
 
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
   border-radius: 8px;
-  color: #636d77;
-  font-size: 16px;
-  line-height: 30px;
+  overflow: hidden;
+  color: $dark;
+  font-size: 18px;
+  line-height: 55px;
   border: 1px solid #c4cfde;
   background-color: #fff;
 
@@ -235,6 +235,17 @@
 
   opacity: 0;
   pointer-events: none;
+
+  &__el {
+    padding: 0 20px;
+    transition: background-color ease .2s, color ease .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f1f7ed;
+      color: #00756a;
+    }
+  }
 
   &.active {
     opacity: 1;
