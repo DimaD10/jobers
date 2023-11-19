@@ -106,6 +106,9 @@
     &-wrapper {
       position: relative;
       width: 100%;
+      &_top {
+        z-index: 10;
+      }
     }
 
     &::placeholder {
