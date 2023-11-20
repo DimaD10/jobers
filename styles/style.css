@@ -425,6 +425,8 @@ body {
   line-height: 55px;
   border: 1px solid #c4cfde;
   background-color: #fff;
+  max-height: 220px;
+  overflow: auto;
   -webkit-transition: opacity ease 0.3s;
   transition: opacity ease 0.3s;
   opacity: 0;

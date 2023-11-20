@@ -230,6 +230,8 @@
   line-height: 55px;
   border: 1px solid #c4cfde;
   background-color: #fff;
+  max-height: 220px;
+  overflow: auto;
 
   transition: opacity ease .3s;
 
