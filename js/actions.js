@@ -1,4 +1,4 @@
-
+console.log("test");
 document.querySelectorAll('.post__input').forEach(el => {
     el.addEventListener('input', e => {
         let place = el;
