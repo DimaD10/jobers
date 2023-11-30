@@ -1,0 +1,94 @@
+.post-textarea__body .tox-tinymce {
+  border: none !important;
+  border-radius: 9px !important;
+  position: static !important;
+}
+.post-textarea__body .tox .tox-toolbar--scrolling {
+  overflow-x: visible !important;
+}
+.post-textarea__body iframe {
+  padding-right: 80px !important;
+  padding-left: 8px !important;
+}
+@media (max-width: 480px) {
+  .post-textarea__body iframe {
+    padding: 0 !important;
+  }
+}
+.post-textarea__body .tox-editor-header {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.post-textarea__body .tox {
+  height: 156px !important;
+}
+.post-textarea__body .tox-statusbar {
+  display: none !important;
+}
+.post-textarea__body .mce-content-body {
+  margin: 16px 24px !important;
+}
+.post-textarea__body .tox-menubar {
+  display: none !important;
+}
+.post-textarea__body .tox-toolbar__group {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  position: absolute;
+  top: 0px;
+  right: 24px;
+  -webkit-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s;
+  z-index: 9999;
+}
+@media (min-width: 991.98px) {
+  .post-textarea__body .tox-toolbar__group {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@media (max-width: 480px) {
+  .post-textarea__body .tox-toolbar__group {
+    position: static !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    padding-left: 16px !important;
+  }
+}
+.post-textarea__body .tox-editor-header {
+  padding: 0 !important;
+}
+.post-textarea__body .tox-tbtn {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background-color: #00b7cd !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+}
+.post-textarea__body .tox-tbtn:hover {
+  background-color: #03a9bc !important;
+}
+.post-textarea__body .tox-tbtn--enabled {
+  background-color: #0f7f91 !important;
+}
+.post-textarea__body .tox-tbtn--enabled:hover {
+  background-color: #0f7f91 !important;
+}
+.post-textarea__body .tox-tbtn path {
+  fill: #fff;
+}

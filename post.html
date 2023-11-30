@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Post jobs for free for 15 days</title>
-    <link rel="stylesheet" href="styles/style.css" >
+    <script src="https://cdn.tiny.cloud/1/vsz70alyugpt8uivbw97rwwqh7hftch9dxm6gzioe7r2fioy/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/textarea.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
           <a href="#" class="logo">
-            <img src="./img/logo.svg" alt="" >
+            <img src="./img/logo2.svg" alt="" />
           </a>
         </div>
       </header>
       <main class="main">
-        <section class="main__post post">
-          <div class="post__container">
-            <div class="post__wrapper">
-              <form class="post__form">
-                <div class="form-decor">
-                  <img src="./img/hero-decor.png" alt="">
-                </div>
-                <div class="form-decor-bottom">
-                  <img alt="Workable graphic" srcset="./img/hero-decor-bottom.png 2x" src="./img/hero-decor-bottom.png">
-                </div>
+        <section class="main__post-job post-job">
+          <div class="post-job__container">
+            <div class="post-job__wrapper">
+              <h1 class="post-job__title">
+                You’re just two quick steps from posting your job to the top job
+                boards
+              </h1>
 
-                <h1 class="post__title">Post jobs for free <br> for 15 days</h1>
-                <p class="post__paragraph">
-                  Try Workable for free and post your job ad to multiple job boards including Indeed, LinkedIn, Google, Glassdoor and more.
-                </p>
-
-                <div class="post__input-wrapper post__input-wrapper_top input-rec-parent">
-                  <input type="text" class="post__input input-rec-input" required placeholder="Tell us the job title you’re hiring for">
-
-                  <div class="input-rec">
-                    <div class="input-rec__el">Item 1</div>
-                    <div class="input-rec__el">Item 2</div>
-                  </div>
-                </div>
-                <div class="post__input-wrapper input-rec-parent">
-                  <input type="text" class="post__input input-rec-input" required placeholder="Tell us the city you’re hiring in">
-
-                  <div class="input-rec">
-                    <div class="input-rec__el">Item 1</div>
-                    <div class="input-rec__el">Item 2</div>
-                    <div class="input-rec__el">Item 3</div>
-                    <div class="input-rec__el">Item 4</div>
-                    <div class="input-rec__el">Item 5</div>
-                    <div class="input-rec__el">Item 6</div>
-                  </div>
-                </div>
-
-                <button class="post__button">
-                  Post your job for free
-                </button>
-
-                <p class="post__text">Post your job free for 15 days, no credit card required</p>
-              </form>
-              <div class="post__preview">
-                <img alt="Workable graphic" srcset="./img/hero.png 2x" src="./img/hero.png">
+              <div class="post-job__decor-top">
+                <img src="./img/post-decor-top.png" alt="">
               </div>
+              <div class="post-job__decor-bottom">
+                <img src="./img/post-decor-bottom.png" alt="">
+              </div>
+
+              <div class="error-notification"></div>
+              <form class="post-job__body">
+                <div class="post-job__left-form post-form-main">
+                  <div class="post-form-main__input-row">
+                    <div class="post-form-main__field value-field">
+                      <input type="text" required class="value-field__input" placeholder="Type a job title">
+                      <div class="value-field__label">Title</div>
+                    </div>
+
+                    <div class="input-rec-parent">
+                      <div class="post-form-main__field value-field">
+                        <input type="text" required class="value-field__input input-rec-input" placeholder="Type a job location">
+                        <div class="value-field__label">Location</div>
+
+                        <div class="input-rec">
+                          <div class="input-rec__el">Item 1</div>
+                          <div class="input-rec__el">Item 2</div>
+                          <div class="input-rec__el">Item 3</div>
+                          <div class="input-rec__el">Item 4</div>
+                          <div class="input-rec__el">Item 5</div>
+                          <div class="input-rec__el">Item 6</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-textarea">
+                    <div class="post-textarea__label">Description</div>
+                    <div class="post-textarea__body">
+                      <textarea class="post-textarea__textarea" placeholder="Enter the job description here; include key areas of responsibility and what the candidate might do on a typical day."></textarea>
+                    </div>
+                  </div>
+
+                  <div class="post-textarea">
+                    <div class="post-textarea__label">Requirements</div>
+                    <div class="post-textarea__body">
+                      <textarea class="post-textarea__textarea" placeholder="Enter the job requirements here; from soft skills to the specific qualifications needed to perform the role."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-job__right-form post-form-user">
+                  <div class="post-form-user__field value-field">
+                    <input type="text" required class="value-field__input" placeholder="Your name">
+                    <div class="value-field__label">Name</div>
+                  </div>
+
+                  <div class="post-form-user__field value-field">
+                    <input type="email" required class="value-field__input" placeholder="Your email">
+                    <div class="value-field__label">Email</div>
+                  </div>
+
+                  <div class="post-form-user__field value-field">
+                    <input type="text" required class="value-field__input" placeholder="Your company name">
+                    <div class="value-field__label">Company name</div>
+                  </div>
+
+                  <div class="post-form-user__field value-field">
+                    <input type="url" required class="value-field__input" placeholder="Your company url">
+                    <div class="value-field__label">Company url</div>
+                  </div>
+
+                  <div class="post-form-user__agreement agreement">
+                    <input type="checkbox" class="agreement__input" id="postAgreement">
+                    <label for="postAgreement" class="agreement__custom-cb"></label>
+
+                    <label for="postAgreement" class="agreement__label">
+                        Yes, I’d like to receive new resources like tutorials, templates and the latest hiring advice, and hear about Workable events. (You can opt out at any time.)
+                        <br>View our <a href="#">privacy policy</a>.
+                    </label>
+                  </div>
+
+                  <input type="submit" class="post-form-user__button" value="Post this job">
+                </div>
+              </form>
             </div>
           </div>
         </section>
 
-        <section class="main__card card">
+        <section class="main__card card card_bg">
           <div class="card__container">
             <div class="card__wrapper">
               <h2>How does it work?</h2>
               <div class="card__content">
                 <div class="card__box">
-                  <img src="./img/cards/card1.svg" alt="" >
-
-                  <h3>SHARE THE BASICS</h3>
-                  <p>
-                    To get started, tell us where you’re hiring and who you’re
-                    hiring for
-                  </p>
-                </div>
-                <div class="card__box">
-                  <img src="./img/cards/card2.svg" alt="" >
-
-                  <h3>CREATE YOUR JOB POST</h3>
-                  <p>
-                    Create your own or generate a tailored job description in
-                    seconds with AI
-                  </p>
-                </div>
-                <div class="card__box">
-                  <img src="./img/cards/card3.svg" alt="" >
+                  <img src="./img/cards/card3.svg" alt="" />
 
                   <h3>NAIL DOWN THE DETAILS</h3>
                   <p>
@@ -99,7 +126,7 @@
                   </p>
                 </div>
                 <div class="card__box">
-                  <img src="./img/cards/card4.svg" alt="" >
+                  <img src="./img/cards/card4.svg" alt="" />
 
                   <h3>POST TO FREE JOB BOARDS</h3>
                   <p>
@@ -108,7 +135,7 @@
                   </p>
                 </div>
                 <div class="card__box">
-                  <img src="./img/cards/card5.svg" alt="" >
+                  <img src="./img/cards/card5.svg" alt="" />
 
                   <h3>SOURCE, EVALUATE & HIRE</h3>
                   <p>
@@ -117,9 +144,6 @@
                     best hire
                   </p>
                 </div>
-                <div class="card-decor">
-                  <img alt="Workable graphic" class="eden-vcard-graphic" srcset="https://dcvxs6ggqztsa.cloudfront.net/assets/public/quick_start/eden-vcard-icons/shapes_2x-83a84ccc35e64da45daf5b2aa4944cf20e9c8327d0dd45da5c4ac06a37b572b1.png 2x" src="https://dcvxs6ggqztsa.cloudfront.net/assets/public/quick_start/eden-vcard-icons/shapes-08eeadcfc1a4267d95485467f3d43fd05f1e5dbeecacce43cb61135371da8f75.png">
-                </div>
               </div>
             </div>
           </div>
@@ -127,65 +151,92 @@
 
         <section class="main__trust trust">
           <div class="trust__decor-top">
-            <img src="./img/decor/trust-top.svg" alt="">
+            <img src="./img/decor/trust-top.svg" alt="" />
           </div>
 
           <div class="trust__content">
             <div class="trust-decor">
-              <img src="./img/decor/trust-decor.png" alt="">
+              <img src="./img/decor/trust-decor.png" alt="" />
             </div>
 
             <div class="trust__container">
               <div class="trust__wrapper">
-
                 <div class="trust-decor-user-top">
-                  <img src="./img/trust/user2.png" alt="">
+                  <img src="./img/trust/user2.png" alt="" />
                 </div>
                 <div class="trust-decor-user-top-desktop">
-                  <img alt="Workable customers" srcset="./img/trust/user2-desktop.png 2x" src="./img/trust/user2-desktop.png">
+                  <img
+                    alt="Workable customers"
+                    srcset="./img/trust/user2-desktop.png 2x"
+                    src="./img/trust/user2-desktop.png" />
                 </div>
                 <div class="trust-decor-user-right">
-                  <img alt="Workable customers" srcset="./img/trust/user4.png 2x" src="./img/trust/user4.png">
+                  <img
+                    alt="Workable customers"
+                    srcset="./img/trust/user4.png 2x"
+                    src="./img/trust/user4.png" />
                 </div>
 
                 <div class="trust-re">
                   <div class="trust-re__wrapper">
-                    <img alt="Workable customers" srcset="./img/trust/ryanair.png 2x" src="./img/trust/ryanair.png">
+                    <img
+                      alt="Workable customers"
+                      srcset="./img/trust/ryanair.png 2x"
+                      src="./img/trust/ryanair.png" />
                   </div>
                 </div>
 
                 <div class="trust-decor-bevi">
                   <div class="trust-decor-bevi__wrapper">
-                    <img alt="Workable customers" srcset="./img/trust/bevi.png 2x" src="./img/trust/bevi.png">
+                    <img
+                      alt="Workable customers"
+                      srcset="./img/trust/bevi.png 2x"
+                      src="./img/trust/bevi.png" />
                   </div>
                 </div>
 
                 <div class="trust__header">
                   <h2 class="trust__title">Trusted by 27,000+ companies</h2>
                   <p class="trust__paragraph">
-                    From local chains to global enterprises, companies around the world depend on Workable to find and hire the people they depend on.
+                    From local chains to global enterprises, companies around
+                    the world depend on Workable to find and hire the people
+                    they depend on.
                   </p>
 
                   <div class="trust-decor-user-middle">
-                    <img alt="Workable customers" srcset="./img/trust/user3.png 2x" src="./img/trust/user3.png">
+                    <img
+                      alt="Workable customers"
+                      srcset="./img/trust/user3.png 2x"
+                      src="./img/trust/user3.png" />
                   </div>
 
                   <div class="trust-decor-forbes">
                     <div class="trust-decor-forbes__wrapper">
-                      <img alt="Workable customers" srcset="./img/trust/forbes.png 2x" src="./img/trust/forbes.png">
+                      <img
+                        alt="Workable customers"
+                        srcset="./img/trust/forbes.png 2x"
+                        src="./img/trust/forbes.png" />
                     </div>
                   </div>
                 </div>
 
                 <div class="trust-user-decor">
-                  <img alt="Workable customers" srcset="https://dcvxs6ggqztsa.cloudfront.net/assets/public/quick_start/ratings/avatars/joshua_2x-486af9750055fec87a0acaefd4a9c918e7d43b06690b3e254a0e76539f155711.png 2x" src="./img/decor/trust-decor.png">
+                  <img
+                    alt="Workable customers"
+                    srcset="
+                      https://dcvxs6ggqztsa.cloudfront.net/assets/public/quick_start/ratings/avatars/joshua_2x-486af9750055fec87a0acaefd4a9c918e7d43b06690b3e254a0e76539f155711.png 2x
+                    "
+                    src="./img/decor/trust-decor.png" />
                 </div>
 
                 <div class="trust__body trust-body">
                   <div class="trust-body__content">
                     <div class="trust-body__article">
                       <div class="trust-body__percent">96%</div>
-                      <h3 class="trust-body__title">of GetApp reviewers recommend Workable to a friend or colleague</h3>
+                      <h3 class="trust-body__title">
+                        of GetApp reviewers recommend Workable to a friend or
+                        colleague
+                      </h3>
                     </div>
 
                     <div class="card-review">
@@ -194,12 +245,18 @@
                       </p>
                       <div class="card-review__bottom">
                         <a href="#" class="card-review__company-logo">
-                          <img src="./img/reviews/img1.svg" alt="">
+                          <img src="./img/reviews/img1.svg" alt="" />
                         </a>
 
                         <div class="review-rate" data-rate="4.5">
-                          <div class="review-rate__stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                          <div class="review-rate__stars-rate"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                          <div class="review-rate__stars">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
+                          <div class="review-rate__stars-rate">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -211,12 +268,18 @@
                       </p>
                       <div class="card-review__bottom">
                         <a href="#" class="card-review__company-logo">
-                          <img src="./img/reviews/img2.svg" alt="">
+                          <img src="./img/reviews/img2.svg" alt="" />
                         </a>
 
                         <div class="review-rate" data-rate="5">
-                          <div class="review-rate__stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                          <div class="review-rate__stars-rate"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                          <div class="review-rate__stars">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
+                          <div class="review-rate__stars-rate">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -227,12 +290,18 @@
                       </p>
                       <div class="card-review__bottom">
                         <a href="#" class="card-review__company-logo">
-                          <img src="./img/reviews/img3.svg" alt="">
+                          <img src="./img/reviews/img3.svg" alt="" />
                         </a>
 
                         <div class="review-rate" data-rate="4.5">
-                          <div class="review-rate__stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                          <div class="review-rate__stars-rate"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                          <div class="review-rate__stars">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
+                          <div class="review-rate__stars-rate">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -243,12 +312,18 @@
                       </p>
                       <div class="card-review__bottom">
                         <a href="#" class="card-review__company-logo">
-                          <img src="./img/reviews/img4.svg" alt="">
+                          <img src="./img/reviews/img4.svg" alt="" />
                         </a>
 
                         <div class="review-rate" data-rate="4.5">
-                          <div class="review-rate__stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                          <div class="review-rate__stars-rate"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                          <div class="review-rate__stars">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
+                          <div class="review-rate__stars-rate">
+                            <span>★</span><span>★</span><span>★</span
+                            ><span>★</span><span>★</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -258,9 +333,8 @@
             </div>
           </div>
 
-
           <div class="trust__decor-top">
-            <img src="./img/decor/trust-bottom.svg" alt="">
+            <img src="./img/decor/trust-bottom.svg" alt="" />
           </div>
         </section>
 
@@ -274,7 +348,7 @@
                     <h3>Where can I post jobs for free?</h3>
                     <p>
                       Using Workable’s free trial account, you can post your job
-                      ad for free to multiple job boards <br >
+                      ad for free to multiple job boards <br />
                       including Indeed, LinkedIn, Google, Glassdoor and more for
                       15 days.
                     </p>
@@ -348,7 +422,10 @@
                   </div>
                 </div>
                 <div class="questions__decor">
-                  <img alt="Workable graphic" srcset="./img/img_question.png 2x" src="./img/img_question.png">
+                  <img
+                    alt="Workable graphic"
+                    srcset="./img/img_question.png 2x"
+                    src="./img/img_question.png" />
                 </div>
               </div>
             </div>
@@ -390,5 +467,7 @@
 
     <script src="./js/rate.js"></script>
     <script src="./js/actions.js"></script>
+
+    <script src="./customize-toolbar.js"></script>
   </body>
 </html>
