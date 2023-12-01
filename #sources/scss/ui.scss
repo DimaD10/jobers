@@ -2,14 +2,14 @@
 @import "./var";
 
 [class*="__container"] {
-  max-width: 1268px;
+  max-width: 1238px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif !important;
 }
 
 .wrapper {

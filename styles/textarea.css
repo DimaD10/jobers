@@ -1,3 +1,36 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-stretch: normal; /* Сбросить font-stretch, если оно было установлено ранее */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Miller";
+  src: url("../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica Regular"), local("Helvetica-Regular"), url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts.Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .post-textarea__body .tox-tinymce {
   border: none !important;
   border-radius: 9px !important;
@@ -8,25 +41,53 @@
 }
 .post-textarea__body iframe {
   padding-right: 80px !important;
-  padding-left: 8px !important;
+  padding-left: 16px !important;
+  font-family: "Proxima Nova" !important;
 }
 @media (max-width: 480px) {
   .post-textarea__body iframe {
-    padding: 0 !important;
+    padding: 8px !important;
+    padding-top: 0px !important;
   }
+}
+.post-textarea__body body.editor {
+  display: block !important;
+  margin-top: 0 !important;
+  color: #75808a;
+}
+.post-textarea__body body.editor p {
+  margin: 0 !important;
+}
+.post-textarea__body body.editor ul,
+.post-textarea__body body.editor li {
+  list-style: circle !important;
+}
+.post-textarea__body body.editor ul {
+  -webkit-padding-start: 24px !important;
+          padding-inline-start: 24px !important;
+}
+.post-textarea__body body p {
+  color: #555 !important;
+  font-size: 16px;
+  line-height: 24px;
 }
 .post-textarea__body .tox-editor-header {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 .post-textarea__body .tox {
-  height: 156px !important;
+  min-height: 156px;
 }
 .post-textarea__body .tox-statusbar {
   display: none !important;
 }
 .post-textarea__body .mce-content-body {
   margin: 16px 24px !important;
+}
+.post-textarea__body body,
+.post-textarea__body .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+  color: rgb(204, 204, 204) !important;
+  font-family: "Proxima Nova" !important;
 }
 .post-textarea__body .tox-menubar {
   display: none !important;

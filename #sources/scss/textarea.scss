@@ -1,30 +1,67 @@
+@import "./font";
+
 .post-textarea__body {
   .tox-tinymce {
     border: none !important;
     border-radius: 9px !important;
     position: static !important;
   }
+
   .tox .tox-toolbar--scrolling {
     overflow-x: visible !important;
   }
   iframe {
     padding-right: 80px !important;
-    padding-left: 8px !important;
+    padding-left: 16px !important;
     @media (max-width: 480px) {
-      padding: 0 !important;
+      padding: 8px !important;
+      padding-top: 0px !important;
+    }
+    font-family: "Proxima Nova" !important;
+  }
+  body.editor {
+    display: block !important;
+    margin-top: 0 !important;
+    color: #75808a;
+
+    p {
+      margin: 0 !important;
+    }
+
+    ul,
+    li {
+      list-style: circle !important;
+    }
+
+    ul {
+      padding-inline-start: 24px !important;
+    }
+  }
+  body {
+    p {
+      color: #555 !important;
+      font-size: 16px;
+      line-height: 24px;
+      //padding-left: 24px !important;
     }
   }
   .tox-editor-header {
     box-shadow: none !important;
   }
   .tox {
-    height: 156px !important;
+    //height: auto !important;
+    min-height: 156px;
   }
   .tox-statusbar {
     display: none !important;
   }
   .mce-content-body {
     margin: 16px 24px !important;
+  }
+  body,
+  .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+    color: rgb(204, 204, 204) !important;
+    font-family: "Proxima Nova" !important;
   }
   .tox-menubar {
     display: none !important;

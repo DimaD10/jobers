@@ -1217,6 +1217,19 @@
 
   &__field {
     margin-bottom: 20px;
+    .value-field__label {
+      font-weight: 400 !important;
+    }
+
+
+    input:focus ~ .value-field__label {
+      transform: translateY(-50%);
+      font-weight: 700 !important;
+    }
+    input:valid ~ .value-field__label {
+      transform: translateY(-50%);
+      font-weight: 700 !important;
+    }
   }
   &__agreement {
     padding: 30px 0;
@@ -1289,9 +1302,9 @@
     width: 100%;
     height: 100%;
     padding: 20px 20px 0px;
-    color: #636d77;
-
+    color: #636d7b;
     font-size: 16px;
+    font-family: Proxima Nova;
     background-color: #fff;
     opacity: 0;
     border-radius: 8px;
@@ -1371,12 +1384,18 @@
     font-size: 16px;
     line-height: 24px;
     color: #636d77;
+    color: rgb(204, 204, 204);
     border-radius: 8px;
     padding-right: 80px;
     padding-top: 0;
-    height: 170px;
+    min-height: 170px;
+    height: auto;
+    position: relative;
+    z-index: 19;
+    overflow: visible;
     &::placeholder {
       color: #6e7883;
+      color: rgb(204, 204, 204);
     }
     &::-webkit-scrollbar {
       width: 6px;
@@ -1400,11 +1419,16 @@
     @media (max-width: 480px) {
       padding: 16px 16px 0;
     }
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 99;
   }
 
   &__body {
+    margin-top: 28px;
     @media (max-width: 480px) {
-      margin-top: 12px;
+      margin-top: 42px;
     }
   }
 }
@@ -1442,4 +1466,8 @@
       }
     }
   }
+}
+.mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+  color: rgb(204, 204, 204) !important;
+  font-family: "Proxima Nova" !important;
 }
