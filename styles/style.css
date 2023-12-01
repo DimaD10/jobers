@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -86,25 +87,6 @@ h6 {
 }
 
 @font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-stretch: normal; /* Сбросить font-stretch, если оно было установлено ранее */
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
   font-family: "Miller";
   src: url("../fonts/Miller-Text.woff2") format("woff2"), url("../fonts/Miller-Text.woff") format("woff"), url("../fonts/Miller Text Regular.otf") format("otf");
   font-weight: normal;
@@ -115,25 +97,6 @@ h6 {
   font-family: "Helvetica";
   src: local("Helvetica Regular"), local("Helvetica-Regular"), url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts.Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-stretch: normal; /* Сбросить font-stretch, если оно было установлено ранее */
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -150,14 +113,14 @@ h6 {
   font-style: normal;
 }
 [class*=__container] {
-  max-width: 1238px;
+  max-width: 1268px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Proxima Nova", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .wrapper {
@@ -169,7 +132,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 .main {
@@ -334,7 +296,7 @@ body {
 .post__title {
   color: #00756a;
   font-size: 46px;
-  font-family: "Proxima Nova", "helvetica", "arial", sans-serif;
+  font-family: "Open Sans", "helvetica", "arial", sans-serif;
   font-weight: 700;
   line-height: 110%;
 }
@@ -585,7 +547,7 @@ body {
 .questions-body h2 {
   color: #333e49;
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -606,7 +568,7 @@ body {
   gap: 6px;
   color: #333e49;
   line-height: 1.6;
-  font-family: "Proxima Nova", "helvetica", "arial", sans-serif;
+  font-family: "Open Sans", "helvetica", "arial", sans-serif;
   font-size: 20px;
 }
 .question h3 {
@@ -644,7 +606,7 @@ body {
 .card__wrapper h2 {
   text-align: center;
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
   color: #333e49;
 }
@@ -652,6 +614,9 @@ body {
   .card__wrapper h2 {
     font-size: calc(30px + 16 * (100vw - 320px) / 930);
   }
+}
+.card__wrapper h2.green {
+  color: #00756a;
 }
 .card__box {
   padding: 40px;
@@ -839,7 +804,7 @@ body {
 }
 .trust__title {
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
   text-align: center;
 }
@@ -1019,7 +984,7 @@ body {
 }
 .trust-body__title {
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
 }
 @media (max-width: 1250px) {
@@ -1535,7 +1500,7 @@ body {
 .confirm__title {
   color: #00756a;
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
   line-height: 110%;
 }
@@ -1557,7 +1522,7 @@ body {
 }
 .confirm__paragraph {
   font-size: 20px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 400;
   color: rgb(51, 62, 73);
   line-height: 160%;
@@ -1591,7 +1556,7 @@ body {
 .post-job__title {
   color: #00756a;
   font-size: 46px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 700;
   line-height: 110%;
   max-width: 50%;
@@ -1616,6 +1581,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 100px;
 }
 @media (max-width: 1200px) {
@@ -1825,7 +1793,7 @@ body {
   padding: 20px 20px 0px;
   color: #636d7b;
   font-size: 16px;
-  font-family: Proxima Nova;
+  font-family: Open Sans;
   background-color: #fff;
   opacity: 0;
   border-radius: 8px;
@@ -1904,7 +1872,7 @@ body {
   height: 100%;
   resize: none;
   padding: 24px;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 24px;
   color: #636d77;
@@ -1973,6 +1941,7 @@ body {
 }
 .post-textarea__body {
   margin-top: 28px;
+  padding-bottom: 10px;
 }
 @media (max-width: 480px) {
   .post-textarea__body {
@@ -2035,5 +2004,5 @@ body {
 
 .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
   color: rgb(204, 204, 204) !important;
-  font-family: "Proxima Nova" !important;
+  font-family: "Open Sans" !important;
 }

@@ -72,7 +72,7 @@
     }
     color: #00756a;
     font-size: 46px;
-    font-family: "Proxima Nova", "helvetica", "arial", sans-serif;
+    font-family: "Open Sans", "helvetica", "arial", sans-serif;
     font-weight: 700;
     line-height: 110%;
   }
@@ -296,7 +296,7 @@
     }
     color: $dark;
     font-size: 46px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-weight: 700;
     margin-bottom: 24px;
   }
@@ -308,7 +308,7 @@
   gap: 6px;
   color: $dark;
   line-height: 1.6;
-  font-family: "Proxima Nova", "helvetica", "arial", sans-serif;
+  font-family: "Open Sans", "helvetica", "arial", sans-serif;
   font-size: 20px;
   h3 {
     font-weight: 700;
@@ -340,9 +340,13 @@
       @media (max-width: 1250px) {
         font-size: calc(30px + (46 - 30) * ((100vw - 320px) / (1250 - 320)));
       }
-      font-family: "Proxima Nova";
+      font-family: "Open Sans";
       font-weight: 700;
       color: $dark;
+
+      &.green {
+        color: #00756a;
+      }
     }
   }
   &__box {
@@ -492,7 +496,7 @@
       font-size: calc(30px + (46 - 30) * ((100vw - 320px) / (1250 - 320)));
     }
     font-size: 46px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-weight: 700;
     text-align: center;
   }
@@ -627,7 +631,7 @@
       font-size: calc(30px + (46 - 30) * ((100vw - 320px) / (767.98 - 320)));
     }
     font-size: 46px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-weight: 700;
 
     @media (max-width: 767.98px) {
@@ -1066,7 +1070,7 @@
   &__title {
     color: #00756a;
     font-size: 46px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-weight: 700;
     line-height: 110%;
     @media (max-width: 1250px) {
@@ -1087,7 +1091,7 @@
     @media (max-width: 767.98px) {
       font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (767.98 - 320)));
     }
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
 
     font-weight: 400;
     color: rgb(51, 62, 73);
@@ -1119,7 +1123,7 @@
   &__title {
     color: #00756a;
     font-size: 46px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-weight: 700;
     line-height: 110%;
     max-width: 50%;
@@ -1140,7 +1144,9 @@
 
   &__body {
     display: flex;
+    align-items: flex-start;
     gap: 100px;
+
     @media (max-width: 1200px) {
       gap: calc(40px + (100 - 40) * ((100vw - 767.98px) / (1200 - 767.98)));
     }
@@ -1220,7 +1226,6 @@
     .value-field__label {
       font-weight: 400 !important;
     }
-
 
     input:focus ~ .value-field__label {
       transform: translateY(-50%);
@@ -1304,7 +1309,7 @@
     padding: 20px 20px 0px;
     color: #636d7b;
     font-size: 16px;
-    font-family: Proxima Nova;
+    font-family: Open Sans;
     background-color: #fff;
     opacity: 0;
     border-radius: 8px;
@@ -1380,7 +1385,7 @@
     height: 100%;
     resize: none;
     padding: 24px;
-    font-family: "Proxima Nova";
+    font-family: "Open Sans";
     font-size: 16px;
     line-height: 24px;
     color: #636d77;
@@ -1427,6 +1432,8 @@
 
   &__body {
     margin-top: 28px;
+    padding-bottom: 10px;
+
     @media (max-width: 480px) {
       margin-top: 42px;
     }
@@ -1469,5 +1476,5 @@
 }
 .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
   color: rgb(204, 204, 204) !important;
-  font-family: "Proxima Nova" !important;
+  font-family: "Open Sans" !important;
 }

@@ -1,34 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"),
-    url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Regular.woff") format("woff"),
-    url("../fonts/ProximaNova-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-stretch: normal; /* Сбросить font-stretch, если оно было установлено ранее */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"),
-    url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Bold.woff") format("woff"),
-    url("../fonts/ProximaNova-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"),
-    url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Semibold.woff") format("woff"),
-    url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "Miller";
