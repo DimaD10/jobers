@@ -24,5 +24,5 @@ tinymce.init({
   content_css_cors: true,
   body_class: "editor",
   content_style:
-    "  body, .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before { font-size: 16px !important; line-height: 24px !important; color: #9999a6 !important; font-family: 'Open Sans';} p, ul, li, div { font-size: 16px !important; line-height: 24px !important; color: #636d77; !important; margin: 0 !important;} body {font-family: Open Sans !important; } ul {padding-inline-start: 24px !important;}",
+    "  body, .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before { font-size: 16px !important; line-height: 24px !important; color: #9999a6 !important; font-family: 'Proxima Nova';} p, ul, li, div, h1, h2, h3, h4, h5, h6 { font-size: 16px !important; line-height: 24px !important; color: #636d77; !important; margin: 0 !important;} body {font-family: 'Proxima Nova' !important; } ul {padding-inline-start: 24px !important;}",
 });
