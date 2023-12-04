@@ -12,6 +12,12 @@
     position: relative !important;
     flex-direction: row-reverse !important;
     overflow: visible !important;
+    @media (max-width: 480px) {
+      flex-direction: column !important;
+    }
+  }
+  .tox-toolbar-overlord {
+    border: none !important;
   }
 
   .tox .tox-toolbar--scrolling {

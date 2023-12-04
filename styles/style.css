@@ -164,8 +164,14 @@ body {
   gap: 16px;
 }
 
+.agreement {
+  position: relative;
+}
 .agreement__input {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .agreement__custom-cb {
   -ms-flex-negative: 0;
@@ -178,6 +184,10 @@ body {
   top: 3px;
   cursor: pointer;
   background-color: #fff;
+  -webkit-transition: border ease 0.3s, -webkit-box-shadow ease 0.3s;
+  transition: border ease 0.3s, -webkit-box-shadow ease 0.3s;
+  transition: border ease 0.3s, box-shadow ease 0.3s;
+  transition: border ease 0.3s, box-shadow ease 0.3s, -webkit-box-shadow ease 0.3s;
   position: relative;
 }
 .agreement__custom-cb::after {
@@ -211,6 +221,17 @@ body {
 }
 .agreement input:checked ~ .agreement__custom-cb::after {
   opacity: 1;
+}
+.agreement input:focus ~ .agreement__custom-cb {
+  border: 1px solid #4385e0;
+  -webkit-box-shadow: 0 0 9px 0 rgba(67, 133, 224, 0.3);
+          box-shadow: 0 0 9px 0 rgba(67, 133, 224, 0.3);
+  outline: none;
+}
+.agreement .agreement__custom-cb:hover {
+  border: 1px solid #4385e0;
+  -webkit-box-shadow: 0 0 9px 0 rgba(67, 133, 224, 0.3);
+          box-shadow: 0 0 9px 0 rgba(67, 133, 224, 0.3);
 }
 
 .header {
@@ -497,7 +518,8 @@ body {
 }
 
 .questions {
-  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   margin-top: 80px;
 }
 @media (max-width: 1250px) {
@@ -1366,14 +1388,17 @@ body {
   }
 }
 .footer__wrapper {
-  padding: 16px;
+  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  gap: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 1200px) {
   .footer__wrapper {
@@ -1401,9 +1426,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
   row-gap: 10px;
 }
 @media (max-width: 1200px) {
@@ -1631,7 +1656,7 @@ body {
   -webkit-transform: translateY(18%);
           transform: translateY(18%);
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .post-job__decor-bottom {
     right: 0;
   }
@@ -1700,9 +1725,15 @@ body {
 .post-form-user__agreement {
   padding: 30px 0;
 }
+.post-form-user__agreement input {
+  top: 30px;
+}
 @media (max-width: 767.98px) {
   .post-form-user__agreement {
     padding: calc(6px + 24 * (100vw - 320px) / 447.98) 0;
+  }
+  .post-form-user__agreement input {
+    top: calc(6px + 24 * (100vw - 320px) / 447.98) 0;
   }
 }
 .post-form-user__button {

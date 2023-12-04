@@ -27,6 +27,17 @@
           flex-direction: row-reverse !important;
   overflow: visible !important;
 }
+@media (max-width: 480px) {
+  .post-textarea__body .tox-editor-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+.post-textarea__body .tox-toolbar-overlord {
+  border: none !important;
+}
 .post-textarea__body .tox .tox-toolbar--scrolling {
   overflow-x: visible !important;
   border-radius: 0 0 8px 0;
