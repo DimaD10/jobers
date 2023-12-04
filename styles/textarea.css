@@ -154,6 +154,14 @@
 .post-textarea__body .tox-toolbar__primary {
   position: sticky;
   top: 0;
+  -webkit-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s;
+}
+@media (min-width: 991.98px) {
+  .post-textarea__body .tox-toolbar__primary {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @media (max-width: 480px) {
   .post-textarea__body .tox-toolbar__primary {

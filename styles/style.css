@@ -1897,6 +1897,10 @@ body {
     opacity: 1 !important;
     pointer-events: all !important;
   }
+  .post-textarea.focus .tox-toolbar__group {
+    opacity: 1 !important;
+    pointer-events: all !important;
+  }
 }
 .post-textarea__textarea {
   width: 100%;

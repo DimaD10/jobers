@@ -121,9 +121,14 @@
   .tox-toolbar__primary {
     position: sticky;
     top: 0;
+    @media (min-width: 991.98px) {
+      opacity: 0;
+      pointer-events: none;
+    }
     @media (max-width: 480px) {
       position: static !important;
     }
+    transition: opacity ease 0.3s;
   }
   .tox-editor-header {
     padding: 0 !important;
