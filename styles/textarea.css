@@ -151,6 +151,15 @@
     padding-left: 16px !important;
   }
 }
+.post-textarea__body .tox-toolbar__primary {
+  position: sticky;
+  top: 0;
+}
+@media (max-width: 480px) {
+  .post-textarea__body .tox-toolbar__primary {
+    position: static !important;
+  }
+}
 .post-textarea__body .tox-editor-header {
   padding: 0 !important;
 }

@@ -118,6 +118,13 @@
     transition: opacity ease 0.3s;
     z-index: 9999;
   }
+  .tox-toolbar__primary {
+    position: sticky;
+    top: 0;
+    @media (max-width: 480px) {
+      position: static !important;
+    }
+  }
   .tox-editor-header {
     padding: 0 !important;
   }
