@@ -1999,7 +1999,7 @@ body {
   }
 }
 .post-textarea__body {
-  margin-top: 28px;
+  margin-top: 32px;
   padding-bottom: 10px;
 }
 @media (max-width: 480px) {
