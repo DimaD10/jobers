@@ -1311,6 +1311,8 @@
     color: rgb(51, 62, 73);
     user-select: none;
     pointer-events: none;
+
+    font-family: 'Proxima Nova' !important;
   }
 
   &__input {
@@ -1442,6 +1444,8 @@
     top: 0px;
     left: 0;
     z-index: 99;
+
+    font-family: "Proxima Nova" !important;  
   }
 
   &__body {

@@ -1843,6 +1843,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  font-family: "Proxima Nova" !important;
 }
 .value-field__input {
   width: 100%;
@@ -1994,6 +1995,7 @@ body {
   top: 0px;
   left: 0;
   z-index: 99;
+  font-family: "Proxima Nova" !important;
 }
 @media (max-width: 480px) {
   .post-textarea__label {
