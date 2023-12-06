@@ -1735,11 +1735,13 @@ body {
 }
 .post-form-user__field .value-field__label {
   font-weight: 400 !important;
+  color: #636d77;
 }
 .post-form-user__field input:focus ~ .value-field__label {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-weight: 700 !important;
+  color: #333e49;
 }
 .post-form-user__field input:valid ~ .value-field__label {
   -webkit-transform: translateY(-50%);
@@ -1828,10 +1830,10 @@ body {
   bottom: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-  -webkit-transition: -webkit-transform ease 0.2s;
-  transition: -webkit-transform ease 0.2s;
-  transition: transform ease 0.2s;
-  transition: transform ease 0.2s, -webkit-transform ease 0.2s;
+  -webkit-transition: color ease 0.2s, -webkit-transform ease 0.2s;
+  transition: color ease 0.2s, -webkit-transform ease 0.2s;
+  transition: transform ease 0.2s, color ease 0.2s;
+  transition: transform ease 0.2s, color ease 0.2s, -webkit-transform ease 0.2s;
   left: 20px;
   font-size: 16px;
   font-weight: 700;

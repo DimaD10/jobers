@@ -1227,11 +1227,13 @@
     margin-bottom: 20px;
     .value-field__label {
       font-weight: 400 !important;
+      color: #636d77;
     }
 
     input:focus ~ .value-field__label {
       transform: translateY(-50%);
       font-weight: 700 !important;
+      color: #333e49;
     }
     input:valid ~ .value-field__label {
       transform: translateY(-50%);
@@ -1302,7 +1304,7 @@
     position: absolute;
     bottom: 50%;
     transform: translateY(50%);
-    transition: transform ease 0.2s;
+    transition: transform ease 0.2s, color ease .2s;
     left: 20px;
     font-size: 16px;
     font-weight: 700;
